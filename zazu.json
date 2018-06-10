@@ -6,20 +6,20 @@
   "blocks": {
     "input": [
       {
-        "id": "translate",
+        "id": "Translate",
         "type": "PrefixScript",
         "prefix": "t",
         "space": true,
         "args": "Required",
         "script": "index.js",
-        "connections": ["Open"]
+        "connections": ["copy"]
       }
     ],
     "output": [
       {
-        "id": "Open",
-        "type": "OpenInBrowser",
-        "url": "{value}"
+        "id": "copy",
+        "type": "CopyToClipboard",
+        "text": "{value}"
       }
     ]
   }
