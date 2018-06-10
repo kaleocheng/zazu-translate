@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kaleocheng/zazu-translate/issues"
   },
-  "homepage": "https://github.com/kaleocheng/zazu-translate#readme"
+  "homepage": "https://github.com/kaleocheng/zazu-translate#readme",
+  "dependencies": {
+    "google-translate-api": "^2.3.0"
+  }
 }
