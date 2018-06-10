@@ -1,0 +1,26 @@
+{
+  "name": "zazu-translate",
+  "version": "1.0.0",
+  "description": "Zazu Plugin to translate Chinese to English with Google translate",
+  "icon": "icon.png",
+  "blocks": {
+    "input": [
+      {
+        "id": "translate",
+        "type": "PrefixScript",
+        "prefix": "t",
+        "space": true,
+        "args": "Required",
+        "script": "index.js",
+        "connections": ["Open"]
+      }
+    ],
+    "output": [
+      {
+        "id": "Open",
+        "type": "OpenInBrowser",
+        "url": "{value}"
+      }
+    ]
+  }
+}
